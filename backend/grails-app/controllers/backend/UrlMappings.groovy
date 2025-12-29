@@ -3,6 +3,7 @@ package backend
 class UrlMappings {
 
     static mappings = {
+        "/api/hello"(controller: "api", action: "hello")
         "/$controller/$action?/$id?(.$format)?"{
             constraints {
                 // apply constraints here
